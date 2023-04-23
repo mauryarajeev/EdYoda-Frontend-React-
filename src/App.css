@@ -1,0 +1,664 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #dddfe2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* home page 2 css */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.selected-option {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.static-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #27ae60;
+}
+
+
+/* modulr page css II */
+
+/* intruction page css */
+
+.instructor-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.page-description {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.action-button {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #555;
+}
+
+/* Navigation links */
+nav {
+  background-color: #0e0d0d;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #0f0707;
+}
+
+.HomeIcon {
+  background-image: url('./Icons/moduleQuiz.svg');
+  background-size: cover;
+  display: inline-block;
+  width: 40px;
+  height: 44px;
+}
+
+.ModulesIcon {
+  background-image: url('./Icons/moduleQuiz.svg');
+  background-size: cover;
+  display: inline-block;
+  width: 40px;
+  height: 44px;
+}
+
+.InstructorIcon {
+  background-image: url('./Icons/moduleQuiz.svg');
+  background-size: cover;
+  display: inline-block;
+  width: 40px;
+  height: 44px;
+}
+
+/* App container */
+.app {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+
+
+/* home page css */
+
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+  background-color: #181616;
+  color: #8d6363;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #577e9e;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.home-page .dropdown button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.home-page .dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #ddd;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+}
+
+.home-page .dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.home-page .dropdown li:hover {
+  background-color: #ddd;
+}
+
+
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.dropdown button:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.dropdown li {
+  font-size: 16px;
+  padding: 12px 24px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown li:hover {
+  background-color: #f8f8f8;
+}
+
+
+
+
+
+/* module page css */
+.module-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-vertical-bar {
+  background-color: #333;
+  color: #fff;
+  height: 100%;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-vertical-bar .tab {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.left-vertical-bar .tab i {
+  font-size: 24px;
+}
+
+.left-vertical-bar .active {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.right-side-content {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.right-side-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.right-side-content p {
+  font-size: 18px;
+}
+
+.right-side-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right-side-content li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.instructor-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .instructor-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  }
+  
+  .instructor-page p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 600px;
+  margin-bottom: 20px;
+  }
+  
+  .instructor-page .instructor-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  }
+  
+  .instructor-page .instructor-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+  }
+  
+  .instructor-page .instructor-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .instructor-page .instructor-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+  
+  .instructor-page .instructor-card p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  }
+  
+  .instructor-page .instructor-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  }
+  
+  
+
+
+
+
+
+.module-page {
+  display: flex;
+}
+
+.left-vertical-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 7%;
+  background-color: #a3a0a0;
+  height: 100%;
+  margin-left: 9%;
+  border: 1px solid #a3a0a0;
+  
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tab i {
+  font-size: 15px;
+}
+
+.tab.active {
+  background-color: #dee0e4;
+  color: #fff;
+}
+
+.right-side-content {
+  margin-left: 4px;
+}
+.topic-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ border: 2px solid #a3a0a0;
+  background-color: #fdfbfb;
+  height: 100%;
+  margin-right:1.5%;
+}
+
+.topic-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.topic-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.topic-content li {
+  margin-bottom: 10px;
+}
+
+.quiz-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.assignment-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.assignment-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.assignment-content li {
+  margin-bottom: 10px;
+}
+
+.fas {
+  font-size: 20px;
+  color: #333;
+  margin-right: 5px;
+}
+
+i {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 10px;
+  color: #0e0d0d;
+  justify-content: flex-start;
+}
+
+.topicIcon {
+  background-image: url('./Icons/topic.svg');
+  background-size: cover;
+  display: inline-block;
+  width: 40px;
+  height: 44px;
+  color: #61dafb;
+}
+
+
+.AssignmentsIcon {
+  background-image: url('./Icons/assignment.svg');
+  background-size: cover;
+  display: inline-block;
+  width: 40px;
+  height: 44px;
+  color: #61dafb;
+}
+
+
+.QuizIcon {
+  background-image: url('./Icons/moduleQuiz.svg');
+  background-size: cover;
+  display: inline-block;
+  width: 40px;
+  height: 44px;
+  color: #61dafb;
+}
+
+.home-page .selected-option {
+  margin-bottom: 20px;
+}
+
+.home-page h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home-page p {
+  font-size: 18px;
+}
+
+
+.ModuleDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ border: 2px solid #a3a0a0;
+  background-color: #fdfbfb;
+  height: 100%;
+  margin-right:1.5%;
+}
+  
+
+.ModuleQuiz{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ border: 2px solid #a3a0a0;
+  background-color: #fdfbfb;
+  height: 100%;
+  margin-right:1.5%;
+}
+  
+  
+  
+  
